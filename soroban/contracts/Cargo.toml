@@ -1,0 +1,17 @@
+[package]
+name = "ozstellarnft"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doctest = false
+
+[dependencies]
+stellar-default-impl-macro = { workspace = true }
+soroban-sdk = { workspace = true }
+stellar-non-fungible = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
