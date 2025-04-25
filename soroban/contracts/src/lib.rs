@@ -11,14 +11,18 @@ impl OZStellarNFT {
     pub fn __constructor(e: &Env) {
         Base::set_metadata(
             e,
-            String::from_str(e, "www.mytoken.com"),
-            String::from_str(e, "My Token"),
-            String::from_str(e, "TKN"),
+            String::from_str(e, "ipfs://bafkreigjf3tymofuq5vepmlijsglf65qprsiwykkkz6ipdgxv6fnxcje4e"),
+            String::from_str(e, "SoroKittens"),
+            String::from_str(e, "SKT"),
         );
     }
 
     pub fn mint(e: &Env, to: Address) -> TokenId {
-        Base::sequential_mint(e, &to)
+        let token_id: TokenId = Base::sequential_mint(e, &to);
+        if token_id > 100 {
+            panic!("Maximum minted already");
+        }
+        token_id
     }
 }
 
