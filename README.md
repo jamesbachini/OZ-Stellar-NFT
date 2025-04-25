@@ -1,4 +1,3 @@
-```markdown
 # OZ-Stellar-NFT
 
 A simple NFT contract on Stellar Soroban using OpenZeppelin libraries, featuring a capped supply of 100 tokens.
@@ -68,7 +67,3 @@ Based on [OpenZeppelin's example](https://github.com/OpenZeppelin/stellar-contra
 - [Full Tutorial](https://jamesbachini.com/openzeppelin-soroban-nfts/)
 
 - [Original OZ Example](https://github.com/OpenZeppelin/stellar-contracts/tree/main/examples/nft-sequential-minting)
-
-```
-
-*Note: Replace the tutorial link placeholder with your actual tutorial URL when available.*
